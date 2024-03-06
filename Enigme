@@ -1,0 +1,68 @@
+Gestion d'un menu interactif
+Objectif:
+
+Développer un script Python qui utilise une boucle while pour afficher un menu interactif à l'utilisateur. Le menu offrira plusieurs options, et l'utilisateur pourra sélectionner une option pour exécuter une tâche spécifique. Le programme continuera à afficher le menu après l'exécution de chaque tâche jusqu'à ce que l'utilisateur choisisse de quitter.
+Consignes détaillées:
+
+    Afficher un menu à l'utilisateur avec au moins trois options et une option pour quitter. Par exemple:
+            Afficher un message de bienvenue
+            Afficher la date et l'heure actuelles
+            Calculer la somme de deux nombres
+            Quitter
+
+    Demander à l'utilisateur de choisir une option. Utilisez la fonction input() pour cela.
+
+    Utiliser une boucle while pour permettre à l'utilisateur de continuer à choisir une option jusqu'à ce qu'il décide de quitter.
+
+    Pour chaque option choisie par l'utilisateur, effectuez les tâches suivantes:
+        Si l'utilisateur choisit l'option 1, affichez un message de bienvenue simple.
+        Si l'utilisateur choisit l'option 2, utilisez le module datetime pour afficher la date et l'heure actuelles.
+        Si l'utilisateur choisit l'option 3, demandez à l'utilisateur de saisir deux nombres et affichez leur somme.
+        Si l'utilisateur choisit l'option 4, quittez la boucle while avec un message d'adieu.
+
+    Gérer les entrées invalides en affichant un message d'erreur et en demandant à nouveau à l'utilisateur de choisir une option valide.
+
+Exemple de sortie attendue: Veuillez choisir une option:
+1. Afficher un message de bienvenue
+2. Afficher la date et l'heure actuelles
+3. Calculer la somme de deux nombres
+4. Quitter
+Choix: 1
+Bonjour et bienvenue!
+
+Choix: 2
+La date et l'heure actuelles sont: 2024-03-06 14:22:34
+
+Choix: 3
+Entrez le premier nombre: 5
+Entrez le deuxième nombre: 7
+La somme est: 12
+
+Choix: 4
+Merci d'avoir utilisé notre programme. Au revoir!
+
+
+
+    option = ["option1: bienvenu","option2: date et heure ", "option3: saisir la sommes de deux nombres","option4: quitter"]
+
+    for liste in option : 
+        print(liste)
+
+    choix = input("choisir une option de 1 a 4 
+
+    if choix== "1" :
+        print("bienvenu") 
+
+    if choix== "2" :
+        print("date et heure : 2024-03-06 14:26:34")
+
+    if choix== "3" :
+        num1=int(input("entrer votre numero"))
+        num2=int(input("entrer votre numero"))
+        sommes= num1 + num2
+        print("saisir les deux sommes") 
+
+    if choix== "4" :
+        print("quitter")
+
+        break
